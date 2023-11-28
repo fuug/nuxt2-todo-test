@@ -24,7 +24,7 @@ export default defineComponent({
 <template>
   <form class="new-task__form" :class="{'show-submit': taskName}" @submit.prevent="addTask">
     <input type="text" v-model="taskName" class="new-task__form-input">
-    <v-btn color="#2578F4" height="auto" variant="elevated" class="new-task__btn" @click="addTask">Submit</v-btn>
+    <v-btn color="#2578F4" height="auto" variant="elevated" dark class="new-task__btn" @click="addTask">Submit</v-btn>
   </form>
 </template>
 
@@ -58,7 +58,6 @@ export default defineComponent({
 }
 
 .new-task__btn {
-  color: #fff;
   border-radius: 8px;
   margin-left: 16px;
 
